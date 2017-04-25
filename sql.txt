@@ -1,0 +1,7 @@
+SELECT payments.value 
+FROM payments
+INNER JOIN studies ON payments.study_id=studies.id
+
+SELECT labs.id
+FROM labs
+INNER JOIN teachers ON labs.id=teachers.id
